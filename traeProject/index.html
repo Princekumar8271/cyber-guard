@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Awareness</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <span class="cyber-text">Cyber</span>
+            <span class="guard-text">Guard</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#threats" class="nav-link">Cyber Threats</a></li>
+            <li><a href="#prevention" class="nav-link">Prevention</a></li>
+            <li><a href="#resources" class="nav-link">Resources</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-main">
+                <h1 class="hero-title">Stay Safe in the 
+                    <span class="highlight">Digital World</span>
+                </h1>
+                <h2 class="hero-subtitle">Your Shield Against <span class="text-gradient">Cyber Threats</span></h2>
+                <div class="hero-divider"></div>
+                <p class="hero-description">In today's interconnected world, cyber threats are evolving faster than ever. 
+                    Learn to identify, prevent, and protect yourself against sophisticated digital attacks. 
+                    <span class="emphasis">Your security is our priority.</span>
+                </p>
+            </div>
+            <div class="hero-features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="feature-text">
+                        <span>Advanced Protection</span>
+                        <small>State-of-the-art security</small>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <div class="feature-text">
+                        <span>Personal Security</span>
+                        <small>Tailored protection plans</small>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="feature-text">
+                        <span>Data Safety</span>
+                        <small>Encrypted & secure</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="threats" class="threats-section">
+        <h2>Common Cyber Threats</h2>
+        <div class="threat-cards">
+            <div class="card">
+                <div id="phishing-animation" class="animation-container"></div>
+                <h3>Phishing Attacks</h3>
+                <p>Deceptive attempts to steal sensitive information by posing as trustworthy entities.</p>
+                <button class="learn-more" data-threat="phishing">Learn More</button>
+            </div>
+            <div class="card">
+                <div id="ransomware-animation" class="animation-container"></div>
+                <h3>Ransomware</h3>
+                <p>Malicious software that encrypts your files and demands payment for decryption.</p>
+                <button class="learn-more" data-threat="ransomware">Learn More</button>
+            </div>
+            <div class="card">
+                <div id="trojan-animation" class="animation-container"></div>
+                <h3>Trojan Attacks</h3>
+                <p>Malware disguised as legitimate software to gain unauthorized access.</p>
+                <button class="learn-more" data-threat="trojan">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="prevention" class="prevention-section ">
+        <h2 class="text-4xl font-bold text-center text-cyan-400 mb-12 glow-text">Prevention Methods</h2>
+        <div class="prevention-tips container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="prevention-card">
+                <div class="icon-container">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Strong Authentication</h3>
+                <ul>
+                    <li>Use complex passwords</li>
+                    <li>Enable two-factor authentication</li>
+                    <li>Regular password updates</li>
+                    <li>Use password managers</li>
+                </ul>
+            </div>
+    
+            <div class="prevention-card">
+                <div class="icon-container">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>System Security</h3>
+                <ul>
+                    <li>Keep software updated</li>
+                    <li>Use reliable antivirus</li>
+                    <li>Enable firewall protection</li>
+                    <li>Regular system backups</li>
+                </ul>
+            </div>
+    
+            <div class="prevention-card">
+                <div class="icon-container">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <h3>Safe Browsing</h3>
+                <ul>
+                    <li>Verify website security</li>
+                    <li>Avoid suspicious downloads</li>
+                    <li>Use secure networks</li>
+                    <li>Enable pop-up blockers</li>
+                </ul>
+            </div>
+    
+            <div class="prevention-card">
+                <div class="icon-container">
+                    <i class="fas fa-envelope-circle-check"></i>
+                </div>
+                <h3>Email Safety</h3>
+                <ul>
+                    <li>Verify sender addresses</li>
+                    <li>Don't click suspicious links</li>
+                    <li>Scan attachments</li>
+                    <li>Report phishing attempts</li>
+                </ul>
+            </div>
+    
+            <div class="prevention-card">
+                <div class="icon-container">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Education & Awareness</h3>
+                <ul>
+                    <li>Stay informed about threats</li>
+                    <li>Regular security training</li>
+                    <li>Follow security blogs</li>
+                    <li>Practice safe computing</li>
+                </ul>
+            </div>
+    
+            <div class="prevention-card">
+                <div class="icon-container">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <h3>Network Security</h3>
+                <ul>
+                    <li>Use VPN services</li>
+                    <li>Secure Wi-Fi networks</li>
+                    <li>Monitor network traffic</li>
+                    <li>Implement access controls</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="resources-section">
+        <h2>Additional Resources</h2>
+        <div class="resources-grid">
+            <a href="https://www.cisa.gov/" class="resource-card" target="_blank">
+                <h3>CISA</h3>
+                <p>Cybersecurity & Infrastructure Security Agency</p>
+            </a>
+            <a href="https://www.sans.org/" class="resource-card" target="_blank">
+                <h3>SANS Institute</h3>
+                <p>Security Training & Resources</p>
+            </a>
+        </div>
+    </section>
+
+    <footer class="cyber-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="cyber-text">Cyber</span>
+                <span class="guard-text">Guard</span>
+            </div>
+            <p class="copyright">&copy; 2023 CyberGuard. All rights reserved.</p>
+            <div class="footer-glow"></div>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <!-- Add before closing body tag -->
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
